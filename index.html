@@ -9,14 +9,17 @@
 </head>
 <body>
     <section class="add_todos">
-        <form method="POST" action="http://localhost:3000/todos" class="todo_form">
-            <input type="text" name="textbox" id="texbox">
+        <iframe name="hiddenFrame" class="hide"></iframe>
+        <form method="POST" action="http://localhost:3000/todos" class="todo_form" target="hiddenFrame">
+            <input type="text" name="title" id="texbox">
             <input type="hidden" name="completed" value=false>
             <input type="submit" value="submit">
         </form>
     </section>
     <section class="retrieve_todos">
         <div class="todos">
+            <span class="update_todos">
+            </span>
         </div>
     </section>
     
