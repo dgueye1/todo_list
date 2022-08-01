@@ -11,14 +11,16 @@
     <section class="add_todos">
         <iframe name="hiddenFrame" class="hide"></iframe>
         <form method="POST" action="http://localhost:3000/todos" class="todo_form" target="hiddenFrame">
-            <input type="text" name="title" id="texbox">
+            <input type="text" name="title" id="texbox" class="textbox">
             <input type="hidden" name="completed" value=false>
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" class="submit">
         </form>
     </section>
     <section class="retrieve_todos">
         <div class="todos">
             <span class="update_todos">
+                <button type="button" class="edit_button"></button>
+                <button type="button" name = "delete_button"class="delete_button" value="delete"></button>
             </span>
         </div>
     </section>
