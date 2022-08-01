@@ -9,13 +9,15 @@
 </head>
 <body>
     <section class="add_todos">
-        <form method="POST" action="http://localhost:3000/todos">
+        <form method="POST" action="http://localhost:3000/todos" class="todo_form">
             <input type="text" name="textbox" id="texbox">
+            <input type="hidden" name="completed" value=false>
             <input type="submit" value="submit">
         </form>
     </section>
     <section class="retrieve_todos">
-        
+        <div class="todos">
+        </div>
     </section>
     
     <script src="./script.js" defer></script>
